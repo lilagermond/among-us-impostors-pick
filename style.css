@@ -1,0 +1,107 @@
+/* General settings */
+
+html, body {
+    margin:0;
+    padding:0;
+    height:100%;
+    width:100%;
+   background-color:black;
+   color:white;
+}
+
+button{
+    background-color:transparent;
+    color:white;
+    font-size:25px;
+    text-align:center;
+    border-radius:5px;
+    border-width:0px;
+    padding:5px 12px;
+    margin:20px;
+}
+
+/* First screen when you choose the number of players and impostors */
+#overlay {
+    height:100%;
+    width:100%;
+    background-color:black;
+    position:absolute;
+    z-index:100;
+} 
+
+/* Images of the crewmates and impostors */
+#image-selection{
+    max-width:70%;
+    margin: 20px auto;
+    padding:10px;
+    text-align:center;
+    border: 6px solid white;
+    min-height:368px;
+}
+
+.select-img {
+    max-width:15%;
+    max-height:150px;
+    margin:15px;
+}
+
+#img-imp2, #img-imp3 {
+    display:none;
+}
+
+/* Choice of numbers of players and impostors */
+#text-selection{
+    max-width:75%;
+    margin:35px auto;
+    color:white;
+    font-size:28px;
+}
+
+#imp1, #crew10{
+    border: 3px solid white;
+}
+
+#crew10{
+    padding:5px 5px;
+}
+
+#validate{
+    float:right;
+    border: 3px solid white;
+    width: 200px;
+}
+
+
+/* Main page to play*/
+#new-round{
+    width:70%;
+    margin:35px auto;
+    color:white;
+}
+
+#recap{
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+#recap1, #recap2{
+    display:inline-block;
+    margin-right:30px;
+}
+
+
+.hidden{
+    display:none;
+    padding:15px;
+}
+
+.hidden img{
+    max-width:90%;
+}
+
+#play{
+    width:200px;
+    border: 3px solid white;
+    float:right;
+}
+             

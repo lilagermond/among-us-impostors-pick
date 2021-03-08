@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <title>Optimized Among Us impostors picking</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <!-- Overlay to choose the paramaters -->
+        <div id="overlay">
+            <div id="image-selection">
+                <img src="assets/selectimpostor.png" class="select-img" id="img-imp1">
+                <img src="assets/selectimpostor.png" class="select-img" id="img-imp2">
+                <img src="assets/selectimpostor.png" class="select-img" id="img-imp3">
+                <img src="assets/selectcrew.png" class="select-img" id="img-crew1">
+                <img src="assets/selectcrew.png" class="select-img" id="img-crew2">
+                <img src="assets/selectcrew.png" class="select-img" id="img-crew3">
+                <img src="assets/selectcrew.png" class="select-img" id="img-crew4">
+                <img src="assets/selectcrew.png" class="select-img" id="img-crew5">
+                <img src="assets/selectcrew.png" class="select-img" id="img-crew6">
+                <img src="assets/selectcrew.png" class="select-img" id="img-crew7">
+                <img src="assets/selectcrew.png" class="select-img" id="img-crew8">
+                <img src="assets/selectcrew.png" class="select-img" id="img-crew9">   
+            </div>
+            <div id="text-selection">
+                Impostors: 
+                <button class="button-select" id="imp1" onclick="impostor(1)">1</button>
+                <button class="button-select" id="imp2" onclick="impostor(2)">2</button>
+                <button class="button-select" id="imp3" onclick="impostor(3)">3</button>
+                <br/>N° Players: 
+                <button class="button-select" id="crew4" onclick="crew(4)">4</button>
+                <button class="button-select" id="crew5" onclick="crew(5)">5</button>
+                <button class="button-select" id="crew6" onclick="crew(6)">6</button>
+                <button class="button-select" id="crew7" onclick="crew(7)">7</button>
+                <button class="button-select" id="crew8" onclick="crew(8)">8</button>
+                <button class="button-select" id="crew9" onclick="crew(9)">9</button>
+                <button class="button-select" id="crew10" onclick="crew(10)">10</button>
+                <br/>
+                
+                <button class="button-select" id="validate" onclick="validate()">Confirm</button>
+            </div>
+        </div>
+        
+        <!-- Games -->
+        <div id="new-round">
+            <div id="recap">
+                <div id="recap1">Number of players: <span id="nbcrewmates"></span></div>
+                <div id="recap1">Number of impostors: <span id="nbimpostors"></span></div>
+            </div>
+            <div id="draw-results">
+                <div class="hidden" id="hidden1">
+                    <img src="assets/blue.png">
+                    <p>Role = <span id="role1"></span></p>
+                    <p>Chances = <span id="chance1"></span></p>
+                </div>
+                <div class="hidden" id="hidden2">
+                    <img src="assets/cyan.png">
+                    <p>Role = <span id="role2"></span></p>
+                    <p>Chances = <span id="chance2"></span></p>
+                </div>
+                <div class="hidden" id="hidden3">
+                    <img src="assets/lime.png">
+                    <p>Role = <span id="role3"></span></p>
+                    <p>Chances = <span id="chance3"></span></p>
+                </div>
+                <div class="hidden" id="hidden4">
+                    <img src="assets/yellow.png">
+                    <p>Role = <span id="role4"></span></p>
+                    <p>Chances = <span id="chance4"></span></p>
+                </div>
+                <div class="hidden" id="hidden5">
+                    <img src="assets/orange.png">
+                    <p>Role = <span id="role5"></span></p>
+                    <p>Chances = <span id="chance5"></span></p>
+                </div>
+                <div class="hidden" id="hidden6">
+                    <img src="assets/red.png">
+                    <p>Role = <span id="role6"></span></p>
+                    <p>Chances = <span id="chance6"></span></p>
+                </div>
+                <div class="hidden" id="hidden7">
+                    <img src="assets/purple.png">
+                    <p>Role = <span id="role7"></span></p>
+                    <p>Chances = <span id="chance7"></span></p>
+                </div>
+                <div class="hidden" id="hidden8">
+                    <img src="assets/pink.png">
+                    <p>Role = <span id="role8"></span></p>
+                    <p>Chances = <span id="chance8"></span></p>
+                </div>
+                <div class="hidden" id="hidden9">
+                    <img src="assets/white.png">
+                    <p>Role = <span id="role9"></span></p>
+                    <p>Chances = <span id="chance9"></span></p>
+                </div>
+                <div class="hidden" id="hidden10">
+                    <img src="assets/brown.png">
+                    <p>Role = <span id="role10"></span></p>
+                    <p>Chances = <span id="chance10"></span></p>
+                </div>
+            </div>
+            <div><button id="play" onclick="selection()">New game</button></div>
+        </div>
+
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+    
+</html>
