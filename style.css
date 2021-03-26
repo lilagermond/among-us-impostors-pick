@@ -5,8 +5,9 @@ html, body {
     padding:0;
     height:100%;
     width:100%;
-   background-color:black;
+    background-color:black;
    color:white;
+    fonts-size:16px;
 }
 
 button{
@@ -22,7 +23,6 @@ button{
 
 /* First screen when you choose the number of players and impostors */
 #overlay {
-    height:100%;
     width:100%;
     background-color:black;
     position:absolute;
@@ -57,6 +57,10 @@ button{
     font-size:28px;
 }
 
+.choose-title{
+    display:inline-block;
+}
+
 #imp1, #crew10{
     border: 3px solid white;
 }
@@ -66,9 +70,9 @@ button{
 }
 
 #validate{
-    float:right;
     border: 3px solid white;
     width: 200px;
+    float:right;
 }
 
 
@@ -89,9 +93,9 @@ button{
     margin-right:30px;
 }
 
-
 .hidden{
     display:none;
+    margin:0;
     padding:15px;
 }
 
@@ -99,9 +103,80 @@ button{
     max-width:90%;
 }
 
+#div-button{
+    vertical-align:top;
+    text-align:right;
+}
+
 #play{
     width:200px;
     border: 3px solid white;
-    float:right;
 }
-             
+
+/* Media queries */
+
+@media (max-width: 900px) {
+    #overlay{
+        background-color:black;
+        height:300%;
+    }
+    
+    #image-selection {
+        max-width:85%;
+        width:85%;
+        margin-left:auto;
+        margin-right:auto;
+    } 
+    
+    #text-selection, #new-round {
+        max-width:90%;
+        width:90%;
+        padding:10px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    
+    #recap{
+        font-size:24px;
+    }
+
+    
+    #draw-results{
+        margin:0 auto;
+    }
+    
+    #recap{
+        padding-top:20px;
+        padding-bottom:20px;
+    }
+    
+    .hidden{
+        width:30%;
+        padding:10px;
+        margin:0;
+        display:inline-block;
+    }
+    
+    
+}
+
+@media (max-width: 760px) {
+    .hidden{
+        width:27%;
+        font-size:13px;
+    }
+    
+    .choose-title{
+        display:block;
+    }
+    
+    .button-select{
+        margin:10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .hidden{
+        width:25%;
+    }
+}

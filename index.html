@@ -2,6 +2,8 @@
     <head>
         <title>Optimized Among Us impostors picking</title>
         <link rel="stylesheet" href="style.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=1.0">
     </head>
     <body>
         
@@ -22,11 +24,11 @@
                 <img src="assets/selectcrew.png" class="select-img" id="img-crew9">   
             </div>
             <div id="text-selection">
-                Impostors: 
+                <p class="choose-title">Impostors: </p>
                 <button class="button-select" id="imp1" onclick="impostor(1)">1</button>
                 <button class="button-select" id="imp2" onclick="impostor(2)">2</button>
                 <button class="button-select" id="imp3" onclick="impostor(3)">3</button>
-                <br/>N° Players: 
+                <p class="choose-title">N° Players: </p>
                 <button class="button-select" id="crew4" onclick="crew(4)">4</button>
                 <button class="button-select" id="crew5" onclick="crew(5)">5</button>
                 <button class="button-select" id="crew6" onclick="crew(6)">6</button>
@@ -34,7 +36,7 @@
                 <button class="button-select" id="crew8" onclick="crew(8)">8</button>
                 <button class="button-select" id="crew9" onclick="crew(9)">9</button>
                 <button class="button-select" id="crew10" onclick="crew(10)">10</button>
-                <br/>
+                <br/><br />
                 
                 <button class="button-select" id="validate" onclick="validate()">Confirm</button>
             </div>
@@ -49,56 +51,57 @@
             <div id="draw-results">
                 <div class="hidden" id="hidden1">
                     <img src="assets/blue.png">
-                    <p>Role = <span id="role1"></span></p>
-                    <p>Chances = <span id="chance1"></span></p>
+                    <p>Role = <span id="role1">/</span></p>
+                    <p>Chances = <span id="chance1">10</span></p>
                 </div>
                 <div class="hidden" id="hidden2">
                     <img src="assets/cyan.png">
-                    <p>Role = <span id="role2"></span></p>
-                    <p>Chances = <span id="chance2"></span></p>
+                    <p>Role = <span id="role2">/</span></p>
+                    <p>Chances = <span id="chance2">10</span></p>
                 </div>
                 <div class="hidden" id="hidden3">
                     <img src="assets/lime.png">
-                    <p>Role = <span id="role3"></span></p>
-                    <p>Chances = <span id="chance3"></span></p>
+                    <p>Role = <span id="role3">/</span></p>
+                    <p>Chances = <span id="chance3">10</span></p>
                 </div>
                 <div class="hidden" id="hidden4">
                     <img src="assets/yellow.png">
-                    <p>Role = <span id="role4"></span></p>
-                    <p>Chances = <span id="chance4"></span></p>
+                    <p>Role = <span id="role4">/</span></p>
+                    <p>Chances = <span id="chance4">10</span></p>
                 </div>
                 <div class="hidden" id="hidden5">
                     <img src="assets/orange.png">
-                    <p>Role = <span id="role5"></span></p>
-                    <p>Chances = <span id="chance5"></span></p>
+                    <p>Role = <span id="role5">/</span></p>
+                    <p>Chances = <span id="chance5">10</span></p>
                 </div>
                 <div class="hidden" id="hidden6">
                     <img src="assets/red.png">
-                    <p>Role = <span id="role6"></span></p>
-                    <p>Chances = <span id="chance6"></span></p>
+                    <p>Role = <span id="role6">/</span></p>
+                    <p>Chances = <span id="chance6">10</span></p>
                 </div>
                 <div class="hidden" id="hidden7">
                     <img src="assets/purple.png">
-                    <p>Role = <span id="role7"></span></p>
-                    <p>Chances = <span id="chance7"></span></p>
+                    <p>Role = <span id="role7">/</span></p>
+                    <p>Chances = <span id="chance7">10</span></p>
                 </div>
                 <div class="hidden" id="hidden8">
                     <img src="assets/pink.png">
-                    <p>Role = <span id="role8"></span></p>
-                    <p>Chances = <span id="chance8"></span></p>
+                    <p>Role = <span id="role8">/</span></p>
+                    <p>Chances = <span id="chance8">10</span></p>
                 </div>
                 <div class="hidden" id="hidden9">
                     <img src="assets/white.png">
-                    <p>Role = <span id="role9"></span></p>
-                    <p>Chances = <span id="chance9"></span></p>
+                    <p>Role = <span id="role9">/</span></p>
+                    <p>Chances = <span id="chance9">10</span></p>
                 </div>
                 <div class="hidden" id="hidden10">
                     <img src="assets/brown.png">
-                    <p>Role = <span id="role10"></span></p>
-                    <p>Chances = <span id="chance10"></span></p>
+                    <p>Role = <span id="role10">/</span></p>
+                    <p>Chances = <span id="chance10">10</span></p>
                 </div>
             </div>
-            <div><button id="play" onclick="selection()">New game</button></div>
+            <div id="div-button"><button id="play" onclick="selection()">New game</button>
+            <br></div>
         </div>
 
         <script type="text/javascript" src="script.js"></script>
